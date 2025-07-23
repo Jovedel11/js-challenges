@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="scrimba.css">
+  <title>Document</title>
+</head>
+<body>
+
+  <div class="container">
+    <div class="calculator">
+      <input type="text" class="input-number">
+      <div class="btn-container">
+        <button>%</button>
+        <button class="erase">CE</button>
+        <button>C</button>
+        <button>X</button>
+        <button>1/x</button>
+        <button>x2</button>
+        <button class="btn" >2/x</button>
+        <button class="btn" >/</button>
+        <button class="btn" >7</button>
+        <button class="btn" >8</button>
+        <button class="btn" >9</button>
+        <button class="btn" >*</button>
+        <button class="btn" >4</button>
+        <button class="btn" >5</button>
+        <button class="btn" >6</button>
+        <button class="btn" >-</button>
+        <button class="btn" >1</button>
+        <button class="btn" >2</button>
+        <button class="btn" >3</button>
+        <button class="btn" >+</button>
+        <button class="btn" >+/-</button>
+        <button class="btn" >0</button>
+        <button class="btn" >.</button>
+        <button class="btn-equals" >=</button>
+      </div>
+    </div>
+  </div>
+  
+</body>
+  <script>
+
+    const erase = document.querySelector(".erase")
+    const equals = document.querySelector(".btn-equals")
+    const display = document.querySelector(".input-number")
+    const button = document.querySelectorAll(".btn")
+
+    let expression = "";
+
+    button.forEach(e => {
+      e.addEventListener('click', () => {
+        expression += e.innerHTML;
+        display.value = expression
+      })
+    })
+
+    equals.addEventListener("click", () => {
+      try{
+        const result = eval(expression)
+        display.value = result
+        expression = ""
+      } catch(e){
+        display.value = e
+        expression = ""
+      }
+    })
+
+    erase.addEventListener("click", () => {
+      display.value = " ";
+      expression = " "
+    })
+
+
+
+
+  </script>
+</html>

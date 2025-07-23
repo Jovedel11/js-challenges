@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+body,html {
+  height: 100vh;
+  width: 100%;
+}
+
+.container {
+  background-color: hsl(120, 27%, 51%);
+  height: 13%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 500;
+  color: white;
+}
+
+.main-container {
+  background-color: hsl(159, 37%, 86%);
+  height: 87%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-container {
+  background-color: hsl(62, 16%, 59%);
+  height: 80%;
+  width: 40%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+h2 {
+  font-size: 50px;
+  color: hsl(240, 75%, 25%);
+}
+
+.todo-form {
+  margin-top: 20px;
+  height: 5%;
+  width: 80%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-field {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15%;
+}
+
+.todo-field {
+  flex: 2;
+  padding: 10px 20px 10px 20px;
+  border: none;
+  border-radius: 10px;
+}
+
+.ctn-add {
+  flex: 0.5;
+  border: none;
+  border-radius: 5px;
+  background-color: hsl(241, 81%, 40%);
+  color: white;
+  font-size: 20px;
+}
+
+.show-todo {
+  margin-top: 15px;
+  height: 100%;
+  width: 80%;
+  display: flex;
+  justify-content: flex-start;
+  color: rgb(0, 0, 0);
+}
+
+.all-todo {
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+

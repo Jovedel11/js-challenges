@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+html, body {
+  scroll-behavior: smooth;
+  height: 100vh;
+  background-color: hsl(221, 78%, 74%);
+}
+
+.main-layout {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 5fr 2fr;
+  grid-template-areas: 
+    "right left"
+  ;
+  height: 80%;
+  width: 80%;
+  grid-template-rows: 1fr;
+  overflow: hidden;
+  border-radius: 17px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.right-container {
+  grid-area: right;
+  background: linear-gradient(to bottom, hsl(161, 37%, 88%), hsl(210, 100%, 100%));
+  display: flex;
+  flex-direction: column;
+}
+
+.side-container {
+  grid-area: left;
+  background: linear-gradient(
+  rgba(12, 11, 60, 0.8), 
+  rgba(12, 11, 60, 0.8)
+  ),url('/assets/image/clouds.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.side-title {
+  margin-top: 70px;
+}
+
+.side-title > .side-h1{
+  font-size: 10px;
+  font-weight: 100;
+}
+
+.date {
+  font-size: 7px;
+}
+
+.side-indetifier {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.degree {
+  font-size: 50px;
+  font-weight: 100;
+}
+
+.where {
+  font-size: 10px;
+}
+
+.para {
+  font-size: 6px;
+  color: hsl(0, 2%, 76%);
+}
+
+.row-container {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  font-size: 15px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 20px 20px 20px;
+}
+
+.search {
+  border: none;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 10px rgba(255, 255, 255, 0.5);
+  padding: 10px 25px 10px 25px;
+  border-radius: 20px;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+}
+
+.grid-layout {
+  width: 100%;
+  margin: 5px 20px 5px 20px;
+  display: grid;
+  grid-template: repeat(6, 5px) / 1fr 1fr 1fr 5fr;
+  grid-gap: 40px;
+  height: 100%;
+}
+
+.bottom-container {
+  display: flex;justify-content: center;
+  flex-direction: column;
+  margin: 10px 20px 10px 20px;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.temps {
+  display: flex;
+  text-align: center;
+  gap: 30px;
+}
+
+.temp {
+  font-size: 13px;
+}
+
+#dropdown {
+  border: none;
+  font-weight: bold;
+}
+
+

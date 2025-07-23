@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="searchSection" style="margin-top: 20px;">
+        <input type="text" id="searchInput" placeholder="Search by Name or Email">
+        <button id="searchBtn">Search</button>
+    </div>
+    <div class="container">
+        <h1 class="title" id="error">Event Registration</h1>
+        <form id="registrationForm" class="registration-form">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" rows="4" placeholder="Special requests or message" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn" id="submitBtn">Submit</button>
+        </form>
+        <div id="registrants" class="registrants-section">
+            <h2>Registered Participants</h2>
+            <ul id="registrantsList" class="registrants-list"></ul>
+        </div>
+    </div>
+    <script src="exercise.js"></script>
+</body>
+</html>

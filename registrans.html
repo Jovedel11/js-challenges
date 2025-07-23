@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+.todo-container {
+    background: #ffffff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+}
+
+.todo-container h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+
+#todoForm {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#todoInput {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+}
+
+#todoInput:focus {
+    border-color: #007bff;
+}
+
+#addTaskBtn {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#addTaskBtn:hover {
+    background-color: #0056b3;
+}
+
+
+.todo-list {
+    list-style: none;
+    padding: 0;
+}
+
+.todo-list li {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f9f9f9;
+}
+
+.todo-list li button {
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.todo-list li button:hover {
+    background: darkred;
+}
+
+    </style>
+</head>
+<body>
+
+    <div class="todo-container">
+        <h1>To-Do List</h1>
+        <form id="todoForm">
+            <input type="text" id="todoInput" placeholder="Enter a new task..." required>
+            <button type="submit" id="addTaskBtn">Add Task</button>
+        </form>
+        <ul id="todoList" class="todo-list"></ul>
+    </div>
+
+    <script src="registrans.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,1167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>loops</title>
+</head>
+<body>
+
+
+  
+  <script>
+
+//     for(let i = 1; i <= 10; i++){
+//       let row = ""
+//       for(let j = 1; j <= i; j++){
+
+//         row += "*"
+//       }
+//       console.log(row)
+//     }
+
+//     const fruits = ["Apple", "Mango", "Banana"];
+// for (let i = 0; i < fruits.length; i++) {
+//   console.log(`Index ${i}: ${fruits[i]}`);
+// // }
+
+
+//     const IfPalindrome  = (text) => {
+//       const cleanString = text.toLowerCase().replace(/\s+/g, "")
+//       return cleanString === cleanString.split(" ").reverse().join()
+
+//     }    
+//     console.log(IfPalindrome("A man, a plan, a canal: Panama"))
+
+
+//     let person = {
+//   name: "Alex",
+//   age: 25,
+//   city: "Manila"
+// };
+
+// for (let key in person) {
+//   console.log(`${key}: ${key  }`);
+// }
+
+// for (let i = 2; i <= 20; i++) {
+//   let isPrime = true; 
+
+//   for (let j = 2; j < i; j++) { 
+//     if (i % j === 0) {
+//       isPrime = false; 
+//       break; 
+//     }
+//   }
+
+//   if (isPrime) {
+//     console.log(i); 
+//   }
+// }
+
+//     let i = 10;
+//     while(i >= 1){
+//       console.log(i)
+//       i--
+//     }
+
+//     let fruits = ["Apple", "Banana", "Mango", "Grapes"];
+//     for(let fruit of fruits){
+//       console.log(fruit)
+//     }
+
+
+    // for(let i = 1; i <=5; i++){
+    //   let row = ""
+    //   for(let j = 1; j <=5; j++){
+    //     row += (i * j) + "\t";
+    //   }
+    //   console.log(row)
+    // }
+
+
+    // let numbers = [
+    //     [1, 2, 3],
+    //     [4, 5, 6],
+    //     [7, 8, 9]
+    //   ];
+
+    // for (let row of numbers) {
+    //   console.log(row)
+    //   for (let num of row) {
+    //     console.log(num);
+    //   }
+    // }
+
+    // for(let i = 1; i <=5; i++){
+    //   let star = ""
+    //   for(let j = 1; j <=i; j++){
+    //     star += '*'
+    //   }
+    //   console.log(star)
+    // }
+
+    // for(let i = 5; i >=1; i--){
+    //   let star = "*"
+    //   for(let j = i; j > 1; j--){
+    //     star += '*'
+    //   }
+    //   console.log(star)
+    // }
+
+
+//     for (let i = 1; i <= 5; i++) {
+//   for (let j = 1; j <= 10; j++) {
+//     console.log(`${i} x ${j} = ${i * j}`);
+//   }
+//   console.log('------------'); 
+// }
+
+    // function fibonacci(n) {
+    //   let fib = [0, 1]; 
+
+    //   for (let i = 2; i < n; i++) {
+    //     fib[i] = fib[i - 1] + fib[i - 2]
+    //   }
+
+    //   return fib; 
+    // }
+
+    // console.log(fibonacci(10));
+    // const words = ["apple", "banana", "apple", "orange", "banana", "apple"];
+
+    // const count = words.reduce((acc, word) => {
+    //   acc[word] = (acc[word] || 0) + 1; 
+    //   return acc;
+    // }, {}); 
+
+    // console.log(count);
+
+
+
+  // const numbers = [2, 4, 6, 8];
+
+  // const multiply = numbers.map(num => num * 2)
+  // const newArray = numbers.map(num => num * num)
+  // console.log(multiply)
+  // console.log(newArray)
+
+  // const words = ["hello", "world", "JavaScript", "React"];
+
+  // const longWords = words.filter(word => word.length > 5)
+  // console.log(longWords)
+
+  // const carts = [
+  // { name: "Laptop", price: 50000 },
+  // { name: "Mouse", price: 1500 }
+  // ];
+
+  // const total = carts.reduce((acc, cur) => acc + cur.price, 0)
+  // console.log(total)
+
+
+  //   const products = [
+  //   { name: "Laptop", price: 50000 },
+  //   { name: "Mouse", price: 900 },
+  //   { name: "Keyboard", price: 1500 },
+  //   { name: "Monitor", price: 8000 }
+  // ];
+
+  // const convert = products.filter(product => product.price > 1000).map(pesos => ({
+  //   name: pesos.name,
+  //   price: pesos.price
+    
+  // }))
+  // console.log(convert)
+
+  //   const users = [
+  //   { name: "John", age: 25 },
+  //   { name: "Jane", age: 30 },
+  //   { name: "Mark", age: 40 },
+  //   { name: "Anna", age: 35 }
+  // ];
+
+  // const average = users.reduce((acc,crv) => acc + crv.age / 4, 0)
+  // console.log(`Average Age: ${average}`)
+
+  //   const inventory = [
+  //   { name: "Laptop", stock: 10 },
+  //   { name: "Mouse", stock: 5 },
+  //   { name: "Keyboard", stock: 0 },
+  //   { name: "Monitor", stock: 2 }
+  // ];
+
+  // const outOfStock = inventory.find(inv => inv.stock === 0)
+  // console.log(outOfStock)
+
+  //   const people = [
+  //   { name: "Alice", age: 22 },
+  //   { name: "Bob", age: 18 },
+  //   { name: "Charlie", age: 16 }
+  // ];
+
+  // const adult = people.every(peopl => peopl.age >= 18)
+  // console.log(adult)
+
+  //   const fullNames = [
+  //   { firstName: "John", lastName: "Doe" },
+  //   { firstName: "Jane", lastName: "Smith" },
+  //   { firstName: "Mark", lastName: "Johnson" }
+  // ];
+
+  // const names = fullNames.flatMap(full => [full.lastName, full.firstName])
+
+  // console.log(names)
+
+
+
+  // const total = products.filter(product => product.price > 1000 ).reduce((value,prev) => value + prev.price, 0)
+  // console.log(total)
+
+  // const unique = [
+  //   ...new Map(products.map(product => [product.category, product])).values()
+  // ]
+  // console.log(unique)
+
+  // const expensive = products.reduce((value,prev) => value.price > prev.price ? value : prev)
+  // console.log(expensive)
+
+  // const firstCheck = products.some(product => product.price > 10000)
+  // const secondCheck = products.every(product => product.price)
+
+  // console.log(firstCheck)
+  // console.log(secondCheck)
+
+  // const findIndex = products.findIndex(product => product.name === "USB Cable")
+  // const erase = products.splice(4)
+  // console.log(products)
+
+  // const products = [
+  //   { name: "Laptop", price: 50000, category: "Electronics" },
+  //   { name: "Mouse", price: 800, category: "Accessories" },
+  //   { name: "Keyboard", price: 1500, category: "Accessories" },
+  //   { name: "Monitor", price: 7000, category: "Electronics" },
+  //   { name: "USB Cable", price: 500, category: "Accessories" }
+  // ];
+
+  //   const grouped = products.reduce((value,prev) => {
+  //     if(!value[prev.category]){
+  //       value[prev.category] = []
+  //     }
+
+  //     value[prev.category].push(prev)
+
+  //     return value
+  //   },{})
+
+  //   console.log(grouped)
+
+  //   const sorting = products.sort((a,b) => a.price - b.price)
+  //   console.log(sorting)
+
+  //   const transform = new Map(
+  //     products.map(product => [product.name, product.price])
+  //   )
+  //   console.log(transform)
+
+  //   const totalPrice = products.reduce((value,prev) => {
+  //     if (!value[prev.category]) {
+  //       value[prev.category] = 0;
+  //     }
+
+  //     value[prev.category] += prev.price
+
+  //     return value
+
+  //   },{})
+
+  //   console.log(totalPrice)
+
+  //   const expensive = products.reduce((value,prev) => {
+  //     if(!value[prev.category] || prev.price > value[prev.category].price){
+  //       value[prev.category] = prev
+  //     }
+
+  //     return value
+  //   }, {})
+
+  //   console.log(expensive)
+
+
+  // const words = ["apple", "banana", "apple", "orange", "banana", "apple", "grape"];
+
+  // const wordCount = words.reduce((value,prev) => {
+  //   value[prev] = (value[prev] || 0) + 1
+  //   return value
+  // }, {})
+  // console.log(wordCount)
+
+  // const names = ["Alice", "Bob", "Charlie", "Anna", "David", "Daniel", "Brian"];
+
+  // const groupNames = names.reduce((value,prev) => {
+  //   const slice = prev.slice(0,1)
+  //   if(!value[slice]){
+  //     value[slice] = []
+  //   }
+
+  //   value[slice].push(prev)
+  //   return value
+
+  // }, {})
+
+  // console.log(groupNames)
+
+  //   const employees = [
+  //   { name: "John", department: "HR" },
+  //   { name: "Jane", department: "IT" },
+  //   { name: "Mark", department: "HR" },
+  //   { name: "Anna", department: "IT" },
+  //   { name: "Paul", department: "Finance" }
+  // ];
+
+  // const groupedEmployes = employees.reduce((value,prev) => {
+  //   if(!value[prev.department]){
+  //     value[prev.department] = []
+  //   }
+
+  //   value[prev.department].push(prev)
+  //   return value
+
+  // }, {})
+  // console.log(groupedEmployes)
+
+  // const arr = ["one", "two", "three"];
+
+  // const obj = arr.reduce((value, count, index) => {
+  //   value[count] = value[count] || {}
+
+  //   value[count] = index
+  //   return value
+
+  // },{})
+
+  // console.log(obj)
+
+  //   const employees = [
+  //   { name: "John", department: "HR" },
+  //   { name: "Jane", department: "IT" },
+  //   { name: "Mark", department: "HR" },
+  //   { name: "Anna", department: "IT" },
+  //   { name: "Paul", department: "Finance" }
+  // ];
+
+  // const nestedGroup = employees.reduce((value, department) => {
+  //   value[department.department] = value[department.department] || {}
+  //   const firstLetter = department.name.charAt(0)
+  //   const lettKey = value[department.department] = firstLetter
+  //   value[lettKey] = value[lettKey] || []
+  //   value[lettKey].push(department)
+    
+  //   return value
+  // }, {})
+
+  // console.log(nestedGroup)
+
+  // const obj = {
+  //   name: "Jove",
+  //   lastName: "Hermosa"
+  // }
+
+  // function getInfo({ name, lastName }){
+  //   return (`My name is ${name} ${lastName}`)
+  // }
+
+  // console.log(getInfo(obj))
+
+  // const obj = { name: "Jovedel", lastName: "Hermosa" };
+  // const array = ["Jov", "Nads", "Nadine"]
+
+  // const makeThemArray = [ ...array, obj ]
+  // const destruc = { ...obj }
+
+  // console.log(destruc.lastName)
+  // console.log(makeThemArray)
+
+
+
+  //   const book = {
+  //   title: "JavaScript Mastery",
+  //   author: "John Doe",
+  //   year: 2025
+  // };
+
+  // const get = { title, author, year } = book;
+
+  // console.log(get.author)
+  // console.log(get.title)
+  // console.log(get.year)
+
+  // function getObj({ title, author, year }){
+  //   return `The Author is ${author} having a title of ${title} in year ${year}`
+  // }
+
+  // console.log(getObj(book))
+
+  // const basicInfo = { name: "Sarah", age: 27 };
+  // const address = { city: "Tokyo", country: "Japan" };
+
+  // const mergeData = { ...basicInfo, ...address }
+  // console.log(mergeData)
+
+
+  //   const person = {
+  //   id: 1,
+  //   name: "Marie",
+  //   age: 22,
+  //   address: {
+  //     city: "Manila",
+  //     country: "Philippines"
+  //   },
+  //   status: "Active"
+  // };
+
+  //   // const key = "address";
+
+  //   const { address: city, id, name } = person;
+
+  //   console.log(city)
+  //   console.log(id)
+
+  //   const apiData = {
+  //   user: {
+  //     profile: {
+  //       name: "Anna",
+  //       age: 23
+  //     }
+  //   }
+  // };
+
+  //   const { 
+  //     user: {
+  //     profile: { name, age, occapation = "none"}
+  //   } } = apiData
+
+  //   console.log(name)
+  //   console.log(occapation)
+
+  // const seperate = ( { name = "Jovedel", age = 18, ...other} ) => {
+  //     console.log(`My name is ${name} ${age}yrs old`)
+  //     console.log("Other info:", other )
+  //   }
+
+  //   const newUser = {
+  //   name: "Kevin",
+  //   age: 19,
+  //   country: "PH",
+  //   status: "Active"
+  // };
+
+  // seperate(newUser)
+
+
+  //   const baseSettings = {
+  //   theme: "light",
+  //   fontSize: 14
+  // };
+
+  //   const isColor = false;
+
+  //   const themeColor = { ...baseSettings, ...(isColor && { theme: "dark" }) }
+
+  //   console.log(themeColor)
+  
+
+  //   const key = "address"
+
+  //   const seperate = ({ name = "Guest", status = "Inactive", age = 20, address: { ...other } }) => {
+  //     console.log(`Name: ${name}, Status: ${status}, Address: ${other.country}, Age: ${age}`)
+  //   }
+
+  //   const person = {
+  //   id: 1,
+  //   name: "Marie",
+  //   age: 22,
+  //   address: {
+  //     city: "Manila",
+  //     country: "Philippines"
+  //   },
+  //   status: "Active"
+  // };
+
+  // seperate(person)
+
+  //   const person = {
+  //   name: "Ken",
+  //   address: {
+  //     city: "Cebu"
+  //   }
+  // }
+
+  //   const greeting = ({ name, role = "User", address: { city } = {} }) => {
+  //     console.log(`Name: ${name}, Role: ${role}, Address: ${city || "Unknown"}`)
+  //   }
+
+  //   greeting(person)
+
+  //   const userInfo = {
+  //   username: "markdev",
+  //   email: "mark@example.com",
+  //   password: "secret123",
+  //   age: 30
+  // }
+
+  //   const { password, ...info } = userInfo
+
+  //   console.log(info)
+
+
+  //   const defaults = {
+  //   theme: "light",
+  //   fontSize: 14,
+  // };
+
+  //   const newTheme = true;
+
+  //   const newSetting =  { ...defaults, ...(newTheme && { theme: "dark" }) }
+
+  //   console.log(newSetting)
+
+  //   const settings = {
+  //   user: {
+  //     username: "Ken",
+  //     preferences: {
+  //       theme: "dark",
+  //       notifications: true
+  //     }
+  //   }
+  // }
+
+  //   const newSettings = { 
+  //     ...settings,
+  //     user: {
+  //       ...settings.user,
+  //     preferences: {
+  //       ...settings.user.preferences,
+  //       notifications: false
+  //     }
+  //     }
+  //    }
+
+  //    console.log(newSettings)
+
+
+  //   const products = [
+  //   { id: 1, name: "Phone", price: 500 },
+  //   { id: 2, name: "Laptop", price: 1500 },
+  //   { id: 3, name: "Tablet", price: 800 }
+  // ]
+
+  //   const increase = products.map(product => {
+  //     const newProduct = product.id === 2 && { ...product, price: 2000 }
+  //     return { ...product, ...newProduct }
+  //   })
+    
+  //   console.log(increase)
+
+  // const animals = {
+  //   1: "DOG",
+  //   2: "CAT",
+  //   3: "SNAKE",
+  //   4: "HORSE",
+  //   5: "BIRDS"
+  // }
+
+  // for(let animal in animals){
+  //   console.log(animals[animal].toLowerCase())
+  // }
+
+    
+  //   const original = {
+  //   name: "Ken",
+  //   address: {
+  //     city: "Cebu"
+  //   }
+  // };
+
+  //   function deepClone(obj) {
+  //     if(typeof obj !== "object" || obj === null) return obj;
+  //     if(Array.isArray(obj)) return obj.map(deepClone)
+
+  //     const result = {};
+  //     for(const key in obj){
+  //       result[key] = deepClone(obj[key])
+  //     }
+  //     return result
+  //   }
+
+  //   console.log(deepClone(original))
+
+  //   const cloneDeep = structuredClone(original)
+
+  //   console.log(cloneDeep)
+
+  //   const otherClone = { ...original }
+
+  //   console.log(otherClone)
+
+  //   const settings = {
+  //   user: {
+  //     info: {
+  //       name: "Marie",
+  //       contact: {
+  //         email: "marie@example.com",
+  //         phone: "123456"
+  //       }
+  //     }
+  //   }
+  // };
+
+  //   const changPhone = {
+  //     ...settings,
+  //     user: {
+  //       ...settings.user,
+  //       info: {
+  //         ...settings.user.info,
+  //         contact: {
+  //           ...settings.user.info.contact,
+  //           phone: "099313123"
+  //         }
+  //       }
+  //     }
+  //   }
+  
+  //   console.log(changPhone)
+
+  //   const data = {
+  //   users: [
+  //     { id: 1, name: "Ken" },
+  //     { id: 2, name: "Marie" }
+  //   ]
+  // };
+
+  //   const changeName = {
+  //     ...data,
+  //     users: { ...data.users.map(user => {
+  //       return user.id === 2 ? { ...user, name: "Mario" } : user
+  //     }) }
+  //   }
+
+  //   console.log(changeName)
+
+  //   const state = {
+  //   cart: {
+  //     items: [
+  //       { id: 1, name: "Laptop", price: 50000 },
+  //       { id: 2, name: "Mouse", price: 800 }
+  //     ],
+  //     total: 50800
+  //   },
+  //   user: {
+  //     name: "Mark",
+  //     location: {
+  //       country: "Philippines",
+  //       city: "Manila"
+  //     }
+  //   }
+  // };
+
+  //   const deepClone = structuredClone(state)
+
+  //   const changeState = {
+  //     ...deepClone,
+  //     cart: {
+  //       ...deepClone.cart,
+  //       items: { ...deepClone.cart.items.map(item => {
+  //         return item.name === "Mouse" ? { ...item, price: 1000 } : item
+  //       }) }
+  //     },
+  //     user: {
+  //       ...deepClone.user,
+  //       location: {
+  //         ...deepClone.user.location,
+  //         city: "Cebu"
+  //       }
+  //     }
+  //   }
+    
+  //   console.log(changeState)
+  //   console.log(state)
+
+    //   const account = {
+    //   id: 101,
+    //   details: {
+    //     name: "Maria"
+    //   },
+    //   preferences: null
+    // };
+
+    // const newAccount = (obj) => {
+    //   return `Welcome ${obj.details?.name} from theme ${obj.preferences ?? "Light"}`
+    // }
+
+    // console.log(newAccount(account))
+
+  //     const config = {
+  //   user: {
+  //     name: "Ken",
+  //     settings: {
+  //       darkMode: false,
+  //       language: null
+  //     }
+  //   }
+  // };
+
+  //     const chaining = (obj) => {
+  //       return `User ${obj.user?.name ?? "Guest"} prefers ${obj.user.settings?.darkMode ? "Dark Mode" : "Light Mode"}: ${obj.user.settings.darkMode} and language: ${obj.user.settings?.language ?? "English"} `
+  //     }
+
+  //   console.log(chaining(config))
+
+  //   const config = {
+  //   user: {
+  //     name: "",
+  //     settings: {
+  //       darkMode: undefined,
+  //       language: ""
+  //     }
+  //   }
+  // };
+
+  //   const userPefer = (obj) => {
+  //     const userName = obj.user?.name || "Guest"
+
+  //     const theme = obj.user?.settings?.darkMode;
+  //     const userTheme = obj.user.settings.darkMode ?? "Light Mode"
+      
+  //     const userLanguage = obj.user?.settings?.language;
+  //     return `User ${userName} prefers ${userTheme}: ${theme} and language:${userLanguage}`
+
+  //   }
+
+  //   console.log(userPefer(config))
+
+  //   const profile = {
+  //   username: "markdev",
+  //   personal: {
+  //     name: "Mark",
+  //     age: 30
+  //   },
+  //   preferences: {
+  //     theme: "dark",
+  //     language: "English"
+  //   }
+  // };
+
+  //   const freezeObject = (objects) => {
+  //     Object.keys(objects).forEach(obj => {
+  //       if(typeof objects[obj] === "object" && objects[obj] !== null){
+  //         freezeObject(objects[obj])
+  //       }
+  //     })
+
+  //     return Object.freeze(objects)
+  //   }
+
+  //   freezeObject(profile)
+
+  //   profile.username = "kenmaster"
+  //   profile.preferences.theme = "light"
+  //   profile.role = "admin"
+
+  //   console.log(profile?.role)
+  //   console.log(profile)
+
+    // const createBankAccount = () => {
+    //   let balance = 0
+
+    //   return {
+    //     deposit(amount) {
+    //       balance += amount;
+    //       console.log(`Deposited ${amount }`)
+    //     },
+    //     getBalance(){
+    //       return balance
+    //     }
+    //   }
+    // }
+
+    // const myAccount = createBankAccount()
+    // myAccount.deposit(100)
+    // console.log(myAccount.getBalance())
+
+  //   function createSeller() {
+  //   let totalEarnings = 0;
+
+  //   function sell(item, price) {
+  //     console.log(`Sold ${item} for ${price} pesos`);
+  //     totalEarnings += price
+  //   }
+
+  //   return {
+  //     sell,
+  //     getEarnings: function() {
+  //       return totalEarnings
+  //     }
+  //   }
+  // }
+
+  // const alingNena = createSeller();
+
+  // alingNena.sell("Saging", 10);
+  // alingNena.sell("Mangga", 15);
+  // console.log("Total Kita:", alingNena.getEarnings()); 
+  // console.log(alingNena.totalEarnings) // hindi accessible dahil sa closure
+
+  // alingNena.sell("Pakwan", 30);
+  // console.log("Total Kita:", alingNena.getEarnings()); 
+
+    // const deliver = (price) => {
+    //   return function(location){
+    //     return function(paymentMethod){
+    //       return `Your deliver in ${location} having a price of ${price} you pay at ${paymentMethod}`
+    //     }
+    //   }
+    // }
+
+    // const itemPrice = deliver(200)
+    // const itemLocation = itemPrice("Boston")
+    // console.log(itemLocation("ATM"))
+
+    // function createOrder(meal){
+    //   return function(drink, side){
+    //     return `Your meal: ${meal}, with ${drink} and ${side}`;
+    //   }
+    // }
+
+    // const alwaysMeal = createOrder("Burger")
+    // console.log(alwaysMeal("Coke", "Fries"))
+
+    // function notify(callback) {
+    //   console.log("Preparing to notify...");
+    //   const greet = "Welcome!"
+    //   callback(greet);
+    // }
+
+    // function showAlert(message) {
+    //   console.log("📢 ALERT: " + message);
+    // }
+
+    // notify(showAlert)
+
+    //   function fetchWeather(city, callback) {
+    // console.log("Fetching weather for:", city);
+    // setTimeout(() => {
+    //   const temp = 30;
+    //   callback(temp);
+    // }, 1000);
+    // }
+
+    // function fetchCity(temp){
+    //   console.log(`Temperature is: ${temp}`)
+    // }
+
+    // fetchWeather("Manila", fetchCity)
+
+
+    // async function greet() {
+    //   return new Promise(resolve => {
+    //     setTimeout(() => {
+    //       resolve("User Data Recieved")
+    //     }, 2000)
+    //   })
+    // }
+
+    // async function callUser() {
+    //   console.log("Waiting for Data")
+    //   const isRecived = await greet();
+    //   console.log(isRecived)
+    //   return "thank you"
+    // }
+
+    // callUser().then(finalMessage => {
+    //   setTimeout(() => {
+    //     console.log(finalMessage)
+    //   }, 2500)
+    // })
+
+    // const userLogin = (email, pass) => {
+    //   return new Promise((resolve, reject) => {
+    //     console.log("Check Details")
+    //     setTimeout(() => {
+    //       if(email === "admin" && pass === "admin"){
+    //         resolve("Successfully Login")
+    //       }else{
+    //         reject("Chech your email or password")
+    //       }
+    //     }, 2000)
+    //   })
+    // }
+
+    // userLogin("admin", "admin").then(res => {
+    //   console.log(res)
+    // }).catch(error => {
+    //   console.error(error)
+    // })
+
+  //     function fetchUserData(id) {
+  //   return new Promise((resolve, reject) => {
+  //     const users = "Guest";
+  //     console.log(`Welcome ${users}`)
+  //     setTimeout(() => {
+  //       if (id > 0) {
+  //         resolve({ id, name: "Juan", age: 25 });
+  //       } else {
+  //         reject("Invalid user ID");
+  //       }
+  //     }, 1500);
+  //     return users
+  //   });
+  // }
+
+  // fetchUserData(1)
+  //   .then(user => {
+  //     console.log("User Found")
+  //     return `Welcome ${user === 0 ? user : user.name}`
+  //   })
+  //   .then(msg => {
+  //     setTimeout(() => {
+  //       console.log(`Welcome ${msg}`)
+  //     }, 1000)
+  //   })
+  //   .catch(err => console.error("Error:", err));
+
+
+//   function placeOrder(orderDetails) {
+//   const { itemName, quantity, paymentMethod } = orderDetails;
+
+//   return new Promise((resolve, reject) => {
+//     if (quantity <= 0) {
+//       return reject("❌ Invalid quantity");
+//     }
+
+//     if (paymentMethod !== "gcash" && paymentMethod !== "cod") {
+//       return reject("❌ Invalid payment method");
+//     }
+
+//     console.log("✅ Order validated... Processing...");
+
+//     setTimeout(() => {
+//       resolve({
+//         status: "Order Placed",
+//         orderSummary: {
+//           item: itemName,
+//           quantity,
+//           paymentMethod
+//         }
+//       });
+//     }, 2000);
+//   });
+// }
+
+// function confirmOrder(response) {
+//   const { item, quantity, paymentMethod } = response.orderSummary;
+
+//   setTimeout(() => {
+//     console.log(`🚚 Order confirmed! Delivering ${quantity}x ${item} via ${paymentMethod}`);
+//   }, 1500);
+// }
+
+// placeOrder({ itemName: "Sinigang", quantity: 2, paymentMethod: "gcash" })
+//   .then(confirmOrder)
+//   .catch(err => console.error(err));
+
+
+
+  // function checkOut(cart) {
+  //   const { itemName, quantity, paymentMethod } = cart;
+
+  //   return new Promise((resolve, reject) => {
+  //     quantity < 0 && reject("Invalid quantity!")
+  //     paymentMethod !== "card" && paymentMethod !== "paypal" && reject("Invalid payment method!");
+      
+  //     console.log("Processing Order...")
+
+  //     setTimeout(() => {
+  //       resolve(
+  //         {
+  //           status: "Order Successful",
+  //           details: {
+  //             itemName,
+  //             quantity,
+  //             paymentMethod
+  //           }
+  //         }
+  //       )
+  //     }, 2000)
+  //   })
+  // }
+
+  // async function deliver(order) {
+  //   const { itemName, quantity, paymentMethod } = order.details;
+  //   const { status } = order;
+  //   setTimeout(() => {
+  //     console.log(`🚚 Delivering ${quantity}x ${itemName} paid via ${paymentMethod}`)
+  //   }, 1000)
+
+  //   setTimeout(() => {
+  //     console.log(`${status} Thank you for Ordering.`)
+  //   })
+  // }
+
+  // checkOut({ itemName: "Laptop", quantity: 1, paymentMethod: "card" }).then(data => {
+  //   return deliver(data)
+  // })
+
+
+    // function proceedCheckout(cart){
+    //   const { itemName, quantity, payment } = cart;
+    //   return new Promise((resolve, reject) => {
+    //     quantity < 0 && reject("Invalid quantity!")
+    //     payment !== "gcash" && payment !== "card" && reject("Invalid payment method!")
+
+    //     console.log("Processing checkout...")
+    //     setTimeout(() => {
+    //       resolve(
+    //         {
+    //           status: "Order Successful!",
+    //           details: {
+    //             itemName,
+    //             quantity,
+    //             payment
+    //           }
+    //         }
+    //       )
+    //     }, 2000)
+    //   })
+    // }
+
+    // async function buyNow() {
+    //   try {
+    //     const order = await proceedCheckout({ itemName: "T-Shirt", quantity: 2, payment: "card" });
+    //     const { itemName, quantity, payment } = order.details;
+    //     const { status } = order
+    //     setTimeout(() => {
+    //       console.log(`You purchased ${quantity}x ${itemName} via ${payment}!`)
+    //     }, 2000)
+    //     setTimeout(() => {
+    //       console.log(`${status} Thank you for Ordering.`)
+    //     }, 1000)
+
+    //   } catch (error) {
+    //     console.error(error)
+    //   }
+    // }
+
+    // buyNow()
+
+
+    // function print(){
+    //   console.log("Loading...")
+    // } 
+
+    // setTimeout(() => {
+    //   print();
+    // }, 3000)
+
+    // function process(count){
+    //   console.log(`Saving Process ${count}`)
+    // }
+
+    // let count = 1
+    // const intervalId =  setInterval(() => {
+    //   process(count);
+    //   count++
+    //   count > 6 && clearInterval(intervalId)
+    // }, 2000)
+
+
+    // const grocerys = {
+    //   milk: 5,
+    //   eggs: 2,
+    //   bread: 1
+    // }
+
+    // Object.entries(grocerys).forEach(([item, quantity]) => {
+    //   console.log(`You need to buy ${quantity} units of ${item}`)
+    // })
+
+    // const grades = {
+    //   math: 95,
+    //   english: 88,
+    //   science: 92,
+    //   history: 90
+    // }
+
+    // Object.entries(grades).forEach(([subject, grade]) => {
+    //   console.log(`Subject: ${subject} - Grade: ${grade}`)
+    // })
+
+
+    // fetch('https://jsonplaceholder.typicode.com/posts', {
+    //   method: 'POST',
+    //   body: JSON.stringify({
+    //     title: 'New Post',
+    //     body: 'Hello World',
+    //     userId: 1
+    //   }),
+    //   headers: {
+    //      'Content-type': 'application/json; charset=UTF-8'
+    //   }
+    // }).then(res => res.json()).then(data => console.log(data)).catch(error => console.log(error))
+
+
+
+    console.log(Boolean(0));
+
+
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+  
+
+
+
+    
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+  </script>
+</body>
+</html>

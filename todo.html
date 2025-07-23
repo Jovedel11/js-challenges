@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="todo.css">
+  <title>Document</title>
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    .contianer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .sub {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      background-color: hsl(0, 0%, 73%);
+    }
+
+    .show {
+      width: 180px;
+      background-color: hsl(180, 53%, 67%);
+      display: none;
+    }
+
+  </style>
+</head>
+<body>
+
+  <h2>Display Hello World</h2>
+
+  <button type="button" onclick="document.querySelector('.demo').innerHTML = Date.now().toString()">Display Current Time and Date</button>
+
+  <div class="contianer">
+    <div class="sub">
+      <h1>Very Easy to Use</h1>
+      <span onclick="document.querySelector('.show').style.display = 'block'">+</span>
+    </div>
+    <div class="show">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque voluptate ex sint velit. Tempora, ipsum similique quae perferendis recusandae repellat quis vel culpa sunt fugiat, ratione voluptas, maxime animi a!</p>
+    </div>
+  </div>
+  <div class="custom">
+    
+  </div>
+  
+
+  <script src="todo.js"></script>
+</body>
+</html>

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+
+  <script>
+    // let loop = "Jovedel";
+    // for(let loops of loop){
+    //   console.log(loops)
+    // }
+    // let num = 123;
+    // console.log(num.toString("36"))
+
+    // const name = "Jovedel Me"
+    // console.log(name.replace("Tv", "Hermosa").toUpperCase())
+
+    // let names = "JovedelHermosaTondo Ako"
+    // console.log(names)
+    // const newNames = names.split(" ")
+    // console.log(newNames)
+    // for(let n of newNames){
+    //   console.log(n)
+    // }
+    // const reverseArray = newNames.reverse().join("")
+    // console.log(reverseArray)
+
+    // const hold = newNames.map(element => element.replace("Ako", "Nadine"));
+    // console.log(hold)
+
+    // let namesNew = "Jovedel Hermosa:Tondo-Ako"
+    // const holdAll = namesNew.split(":")
+    // console.log(holdAll)
+    // const manipulate = holdAll.map(element => element[1].split().reverse().join(""))
+    // console.log(manipulate)
+
+    // const names = "Jovedel"
+    // const hold = [...names].slice(0, 5)
+    // console.log(hold)
+
+    // const array = Array.from(names);
+    // console.log(array)
+
+    // let manual = [];
+    // for(let name of names){
+    //   manual.push(name)
+    // }
+    // console.log(manual)
+
+    // let stars = "*";
+    // for(let i = 1; i <= 10; i++){
+    //   console.log(stars)
+    //   stars += "*"
+    // }
+
+
+    // function change (text) {
+    //   return text.split(" ").map(element => {
+    //     return element.charAt(0).toUpperCase() + element.slice(1).toLowerCase()
+    //   }).join(" ")
+    // }
+
+    // console.log(change("hello world! this is a test."))
+
+    // function reverseWord(text) {
+    //   return text.split(" ").reverse().join(" ")
+    // }
+
+    // console.log(reverseWord("I love JavaScript!"))\
+
+    // function extract(numbers){
+    //   return numbers.match(/\d+/g).map(Number)
+    // }
+
+    // console.log(extract("Order #123: 5 items at $20 each"))
+
+    // function change(numbers){
+    //   return numbers.replace("123456", "******")
+    // }
+    // console.log(change("1234567890"))
+
+
+    // function censorVowels(text) {
+    //   return text.replace(/[aeiouAEIOU]/g, "*")
+    // }
+
+    // console.log(censorVowels("Hello World!"))
+
+    // function longWords(text){
+    //   const array = text.split(" ")
+    //   return array.filter(element => element.length >=  4 )
+    // }
+    // console.log(longWords("JavaScript is the best programming language!"))
+
+    // function removeDuplicates(text){
+    //   let result = "";
+    //   for(let texts of text){
+    //     if(!result.includes(texts)){
+    //       result += texts
+    //     }
+    //   }
+    //   return result
+    // }
+
+    // console.log(removeDuplicates("banana"))
+
+    // function removeDuplicates(text){
+    //   return [...new Set(text)].join("")
+    // }
+
+    // console.log(removeDuplicates("banana"))
+
+    // const reverseEachWord = (texts) => {
+    //   const array = texts.split(" ")
+    //   const rverse = array.map(element => element.split("").reverse().join(" ")).join(" ")
+    //   return rverse
+    // }
+
+    // console.log(reverseEachWord("Hello World! JavaScript is fun!"));
+
+
+    // let manipulation = "nadine tondo"
+    // const names = manipulation.split(" ").map(element => element.charAt(0).toUpperCase() + element.slice(1).toLowerCase()).join(" ")
+
+    // console.log(names)
+    
+    // const lastName = "Hermosa"
+    // const manipulate = "Jovedel"
+    // const string = manipulate.concat(" ", lastName)
+    // const array = [manipulate, lastName].join(" ")
+    // console.log(string)
+    // console.log(array)
+
+
+    // function acronym(text) {
+    //   const firstLetter = text.split(" ").map(letter => letter.charAt(0).toUpperCase()).join('');
+    //   return firstLetter
+    // }
+
+    // console.log(acronym("As Soon As Possible")); 
+    // console.log(acronym("Java Script Object Notation"))
+
+    // function mostFrequentChar(texts) {
+    //   let count = {}
+    //   let char = "";
+    //   let hoyMany = 0;
+
+    //   for(let text of texts){
+    //     if(text !== " "){
+    //       count[text] = (count[text] || 0) + 1
+
+    //       if(count[text] > hoyMany){
+    //         hoyMany = count[text]
+    //         char = text
+    //       }
+    //     }
+    //   }
+    //   return `${char} (${hoyMany} times)`
+
+    // }
+
+    // console.log(mostFrequentChar("javascript")); 
+    // console.log(mostFrequentChar("hello world!")); 
+
+    // function isPalindrome(text) {
+    //   const clean = text.replace(/\s+/g, "").toLowerCase()
+
+    //   const reverse = clean.split("").reverse().join("")
+
+    //   return clean === reverse
+
+    // }
+
+    // console.log(isPalindrome("racecar"));
+    // console.log(isPalindrome("hello"));  
+
+
+
+    // function capitalizeWords(text) {
+    //   const words = text.split(" ").map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()).join(" ")
+    //   return words
+    // }
+
+    // console.log(capitalizeWords("hello world!"));
+    // console.log(capitalizeWords("javaScript is awesome")); 
+
+
+    // function longestWord(text) {
+    //   const find = text.split(" ").reduce((long, lenght) => long.length > lenght.length ? long : lenght, "")
+    //   return find
+    // }
+
+    // console.log(longestWord("The quick brown fox jumps over the lazy dog")); 
+    // console.log(longestWord("JavaScript is fun!")); 
+
+//     function toTitleCase(name) {
+//   return name
+//     .toLowerCase()
+//     .split(" ")
+//     .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+//     .join(" ");
+// }
+//     console.log(toTitleCase("jUAN dela crUz")); 
+
+
+
+  </script>
+</body>
+</html>

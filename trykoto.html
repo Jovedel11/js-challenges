@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <button id="btnLogin">Click Moko</button>
+  <p id="showMess"></p>
+
+  <script>
+
+    const button = document.getElementById("btnLogin");
+    const message = document.getElementById("showMess");
+
+
+    function debounce(fn, delay){
+      let timeoutId
+      return function(...args){
+        clearTimeout(timeoutId);
+        timeoutId = setTimeout(() => fn.apply(this, args),delay)
+      }
+    }
+
+    button.addEventListener("click", e => {
+      console.log("clicked")
+    })
+
+    button.addEventListener("click", debounce(e => {
+      const date = new Date()
+      const loginMessage = `Button clicked at ${date}`
+      message.textContent = loginMessage
+    }, 1000))
+
+  const bird = {
+    size: 'small',
+  };
+
+  const mouse = {
+    name: 'Mickey',
+    small: 'Jov'
+  };
+
+    console.log(mouse[bird.size])
+
+
+
+  </script>
+  
+</body>
+</html>
